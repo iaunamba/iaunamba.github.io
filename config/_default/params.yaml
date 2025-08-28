@@ -11,7 +11,7 @@ appearance:
   #font: native
   #font_size: L
   font: native #Poppins #Roboto
-  font_size: M
+  font_size: L
 
 # SEO
 
