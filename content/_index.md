@@ -15,7 +15,7 @@ sections:
       text: |
         <br>
         
-        The **Grupo de Investigación en Inteligencia Arificial** has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
+        El **Grupo de Investigación en Inteligencia Arificial** tiene como próposito promover el estudio, desarrollo e implementación de soluciones basadas en IA, impulsando la generación de conocimiento.
   
   - block: collection
     content:
