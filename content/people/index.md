@@ -19,6 +19,7 @@ sections:
           - Alumni
       sort_by: Params.last_name
       sort_ascending: true
+      show_links: false ##add
     design:
       show_interests: false
       show_role: true

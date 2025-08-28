@@ -10,7 +10,7 @@ last_name: Mamani-Coaquira
 superuser: true
 
 # Role/position
-role: Profesor de Ingeniería Informática y Sistemas
+role: Profesor de Inteligencia Artificial
 
 # Organizations/Affiliations
 organizations:
