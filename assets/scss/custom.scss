@@ -1,0 +1,4 @@
+.navbar-brand img { max-height: 38px; }
+@media (max-width: 575px) {
+  .navbar-brand img { max-height: 32px; }
+}
