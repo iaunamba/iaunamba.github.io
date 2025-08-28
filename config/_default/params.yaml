@@ -8,8 +8,12 @@
 appearance:
   theme_day: minimal
   theme_night:
-  font: native
-  font_size: L
+  #font: native
+  #font_size: L
+  font:
+    heading: "Poppins"
+    body: "Roboto"
+  font_size: M
 
 # SEO
 
