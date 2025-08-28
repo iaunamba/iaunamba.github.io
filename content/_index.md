@@ -33,8 +33,9 @@ sections:
       order: desc
       page_type: post
     design:
-      view: card
+      view: list #before card now list
       columns: '1'
+      show_media: false
   
   - block: markdown
     content:
