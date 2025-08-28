@@ -40,6 +40,9 @@ header:
     show_day_night: true
     show_search: true
     highlight_active_link: false
+    logo:
+      text: ""            # Sin texto para el título (se ocultará el título textual)
+      filename: "logoiaunamba4.png"  # Nombre del archivo de logo ubicado en assets/media    
 
 # Site footer
 
