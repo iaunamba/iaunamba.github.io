@@ -1,20 +1,20 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: Yonatan Mc
 
 # Full Name (for SEO)
-first_name: Nelson
-last_name: Bighetti
+first_name: Yonatan
+last_name: Mamani-Coaquira
 
 # Is this the primary user of the site?
-superuser: false
+superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Profesor de Ingeniería Informática y Sistemas
 
 # Organizations/Affiliations
 organizations:
-  - name: Stanford University
+  - name: UNAMBA
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
