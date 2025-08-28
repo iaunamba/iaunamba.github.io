@@ -33,7 +33,7 @@ sections:
       order: desc
       page_type: post
     design:
-      view: list #before card now list
+      view: compact #before card now list or compact
       columns: '1'
       show_media: false
   
