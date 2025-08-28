@@ -10,9 +10,7 @@ appearance:
   theme_night:
   #font: native
   #font_size: L
-  font:
-    heading: "Poppins"
-    body: "Roboto"
+  font: Poppins #Roboto
   font_size: M
 
 # SEO
