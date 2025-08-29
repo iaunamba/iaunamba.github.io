@@ -25,5 +25,4 @@ sections:
       show_interests: false
       show_role: true
       show_social: false
-      show_links: false   # 👈 esto quita los enlaces a los perfiles
 ---
