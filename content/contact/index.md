@@ -7,9 +7,16 @@ type: landing
 sections:
   - block: contact
     content:
-      title: Contact
+      title: Únete al Grupo
       text: |-
         Únete al Grupo de Investigación en Inteligencia Artifical de la Universidad Nacional Micaela Bastidas de Apurímac.
+        ¿Te apasiona la **Inteligencia Artificial**? En el **Grupo de Investigación IA UNAMBA** buscamos estudiantes con interés en:
+        - Visión por Computadora
+        - Procesamiento de Lenguaje Natural
+        - Deep Learning & Machine Learning
+        - Data Analytics & Data Mining
+
+      
       email: iaunamba@gmail.com
       #phone: 888 888 88 88
       address:
