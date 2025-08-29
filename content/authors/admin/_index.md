@@ -66,6 +66,7 @@ email: ''
 # Highlight the author in author lists? (true/false)
 highlight_name: false
 
+weight: 1 #orden to list
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
