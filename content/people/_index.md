@@ -20,6 +20,7 @@ sections:
       #sort_by: Params.last_name
       sort_by: weight
       sort_ascending: true
+      show_links: false   # 👈 esto quita los enlaces a los perfiles
     design:
       show_interests: false
       show_role: true
