@@ -16,7 +16,13 @@ sections:
         - Deep Learning & Machine Learning
         - Data Analytics & Data Mining
 
-        Para solicitar trabajar con el grupo de investigación, complete la información en el siguiente formulario {{% cta cta_link="https://iaunamba.github.io" cta_text="👉 Completar Google Form" %}}. Nos pondremos en contacto con usted.
+        Para solicitar trabajar con el grupo de investigación, complete la información en el siguiente formulario.
+        {{% 
+          cta cta_link="https://iaunamba.github.io" 
+          cta_text="👉 Completar solicitud" 
+          cta_new_tab="true"
+        %}}
+        Nos pondremos en contacto con usted.
       
       email: iaunamba@gmail.com
       #phone: 888 888 88 88
