@@ -3,9 +3,3 @@
   .navbar-brand img { max-height: 32px; }
 }
 
-/* Deshabilita clicks en tarjetas/nombres de personas */
-.section-people a {
-  pointer-events: none;
-  cursor: default;
-  text-decoration: none;
-}
