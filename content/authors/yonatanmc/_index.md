@@ -1,9 +1,9 @@
 ---
 # Display name
-title: Yonatan Mamani-Coaquira
+title: Aonatan Mamani-Coaquira
 
 # Full Name (for SEO)
-first_name: Yonatan
+first_name: Aonatan
 last_name: Mamani-Coaquira
 
 # Is this the primary user of the site?
@@ -69,7 +69,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Principal Investigators
+  #- Principal Investigators
   - Miembros del Grupo #Researchers
 ---
 
