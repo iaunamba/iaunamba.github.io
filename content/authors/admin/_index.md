@@ -1,9 +1,9 @@
 ---
 # Display name
-title: Aonatan Mamani-Coaquira
+title: Yonatan Mamani-Coaquira
 
 # Full Name (for SEO)
-first_name: Aonatan
+first_name: Yonatan
 last_name: Mamani-Coaquira
 
 # Is this the primary user of the site?
