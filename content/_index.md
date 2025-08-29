@@ -11,7 +11,7 @@ sections:
         IA
         UNAMBA
       image:
-        filename: welcome.jpg
+        filename: coders.jpg
       text: |
         <br>
         
