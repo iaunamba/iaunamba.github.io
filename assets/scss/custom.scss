@@ -3,11 +3,10 @@
   .navbar-brand img { max-height: 32px; }
 }
 
-/* Desactiva por completo los enlaces a perfiles en la sección People */
-.section-people a[href*="/author/"],
-.section-people a[href*="/authors/"] {
+/* Deshabilitar enlaces solo dentro del nombre (portrait-title) */
+.portrait-title h2 a {
   pointer-events: none !important;
   cursor: default !important;
   text-decoration: none !important;
-  color: inherit !important;
+  color: inherit !important; /* hereda el color normal */
 }
