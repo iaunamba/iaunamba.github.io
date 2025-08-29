@@ -3,3 +3,14 @@
   .navbar-brand img { max-height: 32px; }
 }
 
+/* Desactivar clics y estilo de enlaces en la sección People */
+.section-people .portrait-title a,
+.section-people .avatar-link,
+.section-people .people-person a,
+.section-people .portrait a,
+.section-people .person a {
+  pointer-events: none !important;
+  cursor: default !important;
+  text-decoration: none !important;
+  color: inherit !important;
+}
