@@ -7,7 +7,7 @@ first_name: Rafael R.
 last_name: Quispe Merma
 
 # Is this the primary user of the site?
-superuser: true
+superuser: false
 
 # Role/position
 role: Profesor de Big Data
