@@ -16,7 +16,7 @@ sections:
 
   - block: markdown
     content:
-      title: " "
+      #title: " "
       text: |
         ### Misión
         Contribuir a la formación de investigadores y profesionales en **Inteligencia Artificial**, desarrollando soluciones innovadoras que respondan a las necesidades académicas, sociales e industriales, con impacto regional y nacional.
