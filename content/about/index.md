@@ -16,15 +16,17 @@ sections:
 
   - block: hero
     content:
-      title: |
-        IA
-        UNAMBA
+      title: "Misión y Visión"
       text: |
         ### Misión
         Contribuir a la formación de investigadores y profesionales en **Inteligencia Artificial**, desarrollando soluciones innovadoras que respondan a las necesidades académicas, sociales e industriales, con impacto regional y nacional.
-      text: |
+
         ### Visión
         Ser un **grupo de referencia en investigación en Inteligencia Artificial en el sur del Perú**, reconocido por la calidad de sus proyectos, publicaciones y aportes tecnológicos al servicio de la sociedad y de la comunidad científica.
+    design:
+      columns: "2"
+      title_align: center
+
 
   - block: markdown
     content:
