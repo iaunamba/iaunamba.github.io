@@ -24,7 +24,7 @@ sections:
         ### Visión
         Ser un **grupo de referencia en investigación en Inteligencia Artificial en el sur del Perú**, reconocido por la calidad de sus proyectos, publicaciones y aportes tecnológicos al servicio de la sociedad y de la comunidad científica.
     design:
-      columns: "2"   # 👈 Divide en dos columnas
+      columns: "2"
 
   - block: markdown
     content:
