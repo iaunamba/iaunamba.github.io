@@ -1,8 +1,8 @@
 ---
-title: Example Event
+title: Fundamentos de Machine Learning con Python
 
-event: Wowchemy Conference
-event_url: https://example.org
+event: Curso Taller
+event_url: 
 
 location: Wowchemy HQ
 address:
