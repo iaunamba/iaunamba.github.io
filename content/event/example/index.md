@@ -4,7 +4,7 @@ title: Fundamentos de Machine Learning con Python
 event: Curso Taller
 event_url: 
 
-location: Wowchemy HQ
+location: EPIIS - UNAMBA
 address:
   street: 450 Serra Mall
   city: Stanford
@@ -12,8 +12,8 @@ address:
   postcode: '94305'
   country: United States
 
-summary: An example event.
-abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam.'
+summary: Fortalecer capacidades en fundamentos de Machine Learning con Python.
+#abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
