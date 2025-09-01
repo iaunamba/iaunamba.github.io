@@ -1,28 +1,28 @@
 ---
-title: Fundamentos de Machine Learning con Python
+title: Example Event
 
-event: Curso taller
-event_url: #https://example.org
+event: Wowchemy Conference
+event_url: https://example.org
 
-location: E.P. Ingeniería Informática y Sistemas
+location: Wowchemy HQ
 address:
-  street:
-  city: Tamburco, Abancay
-  region: Apurímac
-  postcode:
-  country: Perú
+  street: 450 Serra Mall
+  city: Stanford
+  region: CA
+  postcode: '94305'
+  country: United States
 
-summary: Fundamentos de Machine Learning.
-abstract: 'Fortalecer las competencias académicas y de investigación de los estudiantes de la Escuela Profesional de Ingeniería Informática y Sistemas en la aplicación de Python para el diseño, implementación y evaluación de modelos de Machine Learning, mediante una capacitación teórico-práctica que promueva el desarrollo de soluciones inteligentes orientadas a la investigación y la innovación tecnológica.'
+summary: An example event.
+abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2025-07-22T18:00:00Z'
-date_end: '2025-08-26T20:00:00Z'
+date: '2030-06-01T13:00:00Z'
+date_end: '2030-06-01T15:00:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: '2025-07-22T00:00:00Z'
+publishDate: '2017-01-01T00:00:00Z'
 
 authors: []
 tags: []
@@ -51,14 +51,13 @@ slides:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-
 projects:
-# ---
+---
 
-# Slides can be added in a few ways:
+Slides can be added in a few ways:
 
-# - **Create** slides using Wowchemy's [_Slides_](https://docs.hugoblox.com/managing-content/#create-slides) feature and link using `slides` parameter in the front matter of the talk file
-# - **Upload** an existing slide deck to `static/` and link using `url_slides` parameter in the front matter of the talk file
-# - **Embed** your slides (e.g. Google Slides) or presentation video on this page using [shortcodes](https://docs.hugoblox.com/writing-markdown-latex/).
+- **Create** slides using Wowchemy's [_Slides_](https://docs.hugoblox.com/managing-content/#create-slides) feature and link using `slides` parameter in the front matter of the talk file
+- **Upload** an existing slide deck to `static/` and link using `url_slides` parameter in the front matter of the talk file
+- **Embed** your slides (e.g. Google Slides) or presentation video on this page using [shortcodes](https://docs.hugoblox.com/writing-markdown-latex/).
 
-# Further event details, including page elements such as image galleries, can be added to the body of this page.
+Further event details, including page elements such as image galleries, can be added to the body of this page.
