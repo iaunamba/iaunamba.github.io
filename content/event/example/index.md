@@ -2,14 +2,14 @@
 title: Fundamentos de Machine Learning con Python
 
 event: Curso taller
-event_url: '' #https://example.org
+event_url: #https://example.org
 
 location: E.P. Ingeniería Informática y Sistemas
 address:
-  street: ''
+  street:
   city: Tamburco, Abancay
   region: Apurímac
-  postcode: ''
+  postcode:
   country: Perú
 
 summary: Fundamentos de Machine Learning.
