@@ -1,5 +1,5 @@
 ---
-title: Eventos de IA UNAMBA
+title: Eventos IA UNAMBA
 
 # Listing view
 view: compact
