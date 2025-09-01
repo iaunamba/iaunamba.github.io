@@ -15,7 +15,7 @@ sections:
       text: |
         <br>
         
-        El **Grupo de Investigación en Inteligencia Arificial** tiene como próposito promover el estudio, desarrollo e implementación de soluciones basadas en IA, impulsando la generación de conocimiento.
+        El **Grupo de Investigación en Inteligencia Artificial** tiene como próposito promover el estudio, desarrollo e implementación de soluciones basadas en IA, impulsando la generación de conocimiento.
   
   - block: collection
     content:

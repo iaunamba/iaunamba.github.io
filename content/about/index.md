@@ -8,7 +8,7 @@ sections:
     content:
       title: Sobre el grupo
       text: |
-        El **Grupo de Investigación en Inteligencia Arificial** tiene como próposito promover el estudio, desarrollo e implementación de soluciones basadas en Inteligencia Artificial, impulsando la generación de conocimiento.
+        El **Grupo de Investigación en Inteligencia Artificial** tiene como próposito promover el estudio, desarrollo e implementación de soluciones basadas en Inteligencia Artificial, impulsando la generación de conocimiento.
        
         Nuestro grupo está conformado por docentes y estudiantes con interés en áreas como Visión por Computadora, Procesamiento de Lenguaje Natural, Machine Learning, Deep Learning, Data Analytics y Data Mining.  
         

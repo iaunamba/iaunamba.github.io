@@ -1,5 +1,5 @@
 ---
-title: Recent & Upcoming Events
+title: Eventos de IA UNAMBA
 
 # Listing view
 view: compact
