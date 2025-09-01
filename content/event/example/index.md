@@ -39,6 +39,9 @@ url_pdf: ''
 url_slides: ''
 url_video: ''
 
+share: false #bloquear redes sociales
+
+
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
