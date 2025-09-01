@@ -6,11 +6,11 @@ event_url:
 
 location: EPIIS - UNAMBA
 address:
-  street: 450 Serra Mall
-  city: Stanford
-  region: CA
-  postcode: '94305'
-  country: United States
+  street: ''
+  city: ''
+  region: ''
+  postcode: ''
+  country: ''
 
 summary: Fortalecer capacidades en fundamentos de Machine Learning con Python.
 #abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam.'
@@ -22,7 +22,7 @@ summary: Fortalecer capacidades en fundamentos de Machine Learning con Python.
 #all_day: false
 
 # Schedule page publish date (NOT talk date).
-#publishDate: '2017-01-01T00:00:00Z'
+publishDate: '2025-07-22T18:00:00Z'
 
 authors: []
 tags: []
