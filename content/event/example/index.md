@@ -53,11 +53,11 @@ slides:
 #   Otherwise, set `projects = []`.
 projects:
 ---
-
-Slides can be added in a few ways:
+Fortalecer las competencias académicas y de investigación de los estudiantes de la Escuela Profesional de Ingeniería Informática y Sistemas en la aplicación de Python para el diseño, implementación y evaluación de modelos de Machine Learning, mediante una capacitación teórico-práctica que promueva el desarrollo de soluciones inteligentes orientadas a la investigación y la innovación tecnológica.
+<!-- Slides can be added in a few ways:
 
 - **Create** slides using Wowchemy's [_Slides_](https://docs.hugoblox.com/managing-content/#create-slides) feature and link using `slides` parameter in the front matter of the talk file
 - **Upload** an existing slide deck to `static/` and link using `url_slides` parameter in the front matter of the talk file
 - **Embed** your slides (e.g. Google Slides) or presentation video on this page using [shortcodes](https://docs.hugoblox.com/writing-markdown-latex/).
 
-Further event details, including page elements such as image galleries, can be added to the body of this page.
+Further event details, including page elements such as image galleries, can be added to the body of this page. -->
