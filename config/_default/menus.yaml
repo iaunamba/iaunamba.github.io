@@ -43,8 +43,8 @@ main:
     url: investigation
     weight: 50
 
-  - name: Eventos
-    url: event
+  - name: Noticias
+    url: post
     weight: 60
 
   - name: Únete
