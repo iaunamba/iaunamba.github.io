@@ -22,7 +22,7 @@ sections:
       title: Últimas noticias
       subtitle:
       text:
-      count: 5
+      count: 2 #5
       filters:
         author: ''
         category: ''
