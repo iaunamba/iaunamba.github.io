@@ -16,3 +16,14 @@
   display: none !important;
 }
 
+/* Desactivar completamente el clic en la imagen del miembro */
+.section-people a.avatar-link {
+  pointer-events: none !important;
+  cursor: default !important;
+}
+
+/* Asegurar que tampoco sea clickeable la imagen dentro del enlace */
+.section-people a.avatar-link img {
+  pointer-events: none !important;
+}
+
