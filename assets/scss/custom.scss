@@ -1,3 +1,13 @@
+/* ===============================
+   HOME (Inicio) – Tema oscuro
+   =============================== */
+
+body.home {
+  background-color: #0d1117;
+  color: #e6edf3; /* texto claro */
+}
+
+
 .navbar-brand img { max-height: 38px; }
 @media (max-width: 575px) {
   .navbar-brand img { max-height: 32px; }
