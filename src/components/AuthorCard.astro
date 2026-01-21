@@ -1,0 +1,25 @@
+---
+import { authors, type AuthorId } from "../content/authors/authors";
+
+interface Props {
+    authorId: string;
+}
+
+const { authorId } = Astro.props;
+
+// Buscar el autor en el objeto grande
+const author = authors[authorId as AuthorId];
+
+if (!author) {
+    console.warn(`Autor con id '${authorId}' no encontrado`);
+    return;
+}
+---
+
+<div class="flex">
+    <img
+        src={author.avatar}
+        alt={author.name}
+        class="h-10 w-10 sm:h-12 sm:w-12 md:h-15 md:w-15 rounded-full"
+    />
+</div>

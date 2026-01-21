@@ -1,0 +1,58 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Carousel from "../components/Carrusel.astro";
+
+const ImagenesPortada = [
+    "https://iaunamba.github.io/media/coders_hu5626398506391422655.jpg",
+    "https://iaunamba.github.io/post/07-11-25-fercyt/featured_hu12212998426348021083.webp",
+];
+---
+
+<Layout>
+    <div class="mx-4 sm:mx-8 md:mx-12">
+        <section
+            class="text-center text-white py-12 sm:py-20 md:py-32 lg:py-40 px-4 sm:px-8 md:px-16 lg:px-70 bg-[#383A41] rounded-lg mt-20"
+        >
+            <h2
+                class="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl mb-4 sm:mb-6"
+            >
+                Creamos soluciones reales con inteligencia artificial
+            </h2>
+            <span
+                class="text-base sm:text-xl md:text-2xl lg:text-3xl text-[#B2BBC5] block"
+                >IA UNAMBA comunidad de investigadores, estudiantes y curiosos
+                que transforman ideas en proyectos reales.</span
+            >
+        </section>
+        <div
+            class="my-12 sm:my-20 md:my-32 lg:my-40 text-[#D4D4D4] text-xl sm:text-2xl md:text-3xl lg:text-5xl text-center px-4"
+        >
+            <h3>
+                Impulsamos investigación, desarrollo y colaboración para
+                convertirnos en el referente regional donde la curiosidad, la
+                innovación y la ciencia se unen para transformar ideas en
+                impacto.
+            </h3>
+        </div>
+
+        <Carousel images={ImagenesPortada} autoplay={true} interval={3000} />
+
+        <div
+            class="my-12 sm:my-20 md:my-32 lg:my-40 text-2xl sm:text-3xl md:text-4xl lg:text-5xl grid gap-4"
+        >
+            <h3 class="font-semibold text-white">
+                Nuestras lineas de investigacion
+            </h3>
+            <p class="text-[#D4D4D4] pr-0 sm:pr-10 md:pr-20 lg:pr-40">
+                Exploramos y desarrollamos soluciones en los campos clave de la
+                inteligencia artificial para impulsar proyectos con impacto
+                real.
+            </p>
+            <div>
+                <div>1</div>
+                <div>1</div>
+                <div>1</div>
+            </div>
+        </div>
+    </div>
+</Layout>

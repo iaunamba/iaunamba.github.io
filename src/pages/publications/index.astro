@@ -1,0 +1,70 @@
+---
+import AuthorCard from "../../components/AuthorCard.astro";
+import AuthorName from "../../components/AuthorName.astro";
+import LayoutBase from "../../layouts/LayoutBase.astro";
+import { getCollection } from "astro:content";
+const posts = await getCollection("publications");
+---
+
+<LayoutBase
+    MetaTitle="Nuestras Publicaciones - IA Unamba"
+    title="Publicaciones"
+    description="Impulsando nuevos avances y descubrimientos con inteligencia artificial"
+>
+    <main class="max-w-7xl mx-auto p-4 sm:p-6">
+        <section class="grid gap-3 sm:gap-4">
+            {
+                posts.map((post) => {
+                    const { slug, data } = post;
+                    const {
+                        title,
+                        description,
+                        date_publication,
+                        cover_image,
+                        tags,
+                        author,
+                        readingtime,
+                        url_doi_org,
+                    } = data;
+
+                    return (
+                        <article class="block bg-[#181A1E] rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 py-4 sm:py-6 md:py-8 px-4 sm:px-6 md:px-10 text-white">
+                            <a href={`/publications/${slug}`}>
+                                <div class="grid grid-cols-1 md:grid-cols-[30%_70%] gap-4">
+                                    <div class="flex flex-col gap-3 sm:gap-4">
+                                        <span class="text-[#B2BBC5] text-xs sm:text-sm uppercase block">
+                                            {tags?.join(" | ")} | {readingtime}{" "}
+                                            MIN READ
+                                        </span>
+                                        <div class="flex -space-x-3">
+                                            {author.map((id) => (
+                                                <AuthorCard authorId={id} />
+                                            ))}
+                                        </div>
+                                        <div class="flex flex-wrap gap-1 text-sm sm:text-base">
+                                            {author.map((id) => (
+                                                <AuthorName authorId={id} /><span>,</span>
+                                            ))}
+                                            <span> {date_publication}</span>
+                                        </div>
+                                    </div>
+                                    <div class="md:pl-8">
+                                        <h3
+                                            transition:name={`investigation-${slug}`}
+                                            class="text-lg sm:text-xl font-semibold mb-2"
+                                        >
+                                            {title}
+                                        </h3>
+                                        <p class="text-base sm:text-lg md:text-xl text-[#B2BBC5] font-medium line-clamp-4">
+                                            {description}
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                    );
+                })
+            }
+        </section>
+    </main>
+</LayoutBase>

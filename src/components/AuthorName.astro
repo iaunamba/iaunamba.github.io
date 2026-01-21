@@ -1,0 +1,21 @@
+---
+import { authors, type AuthorId } from "../content/authors/authors";
+
+interface Props {
+    authorId: string;
+}
+
+const { authorId } = Astro.props;
+
+// Buscar el autor en el objeto grande
+const author = authors[authorId as AuthorId];
+
+if (!author) {
+    console.warn(`Autor con id '${authorId}' no encontrado`);
+    return;
+}
+---
+
+<div class="text-sm text-[#26BBFF]">
+    <span>{author.name.split(" ")[0]}</span>
+</div>

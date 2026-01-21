@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Colores Globales Definidos*/
+@theme {
+    --color-bluedark: #0d1117;
+    --color-blue: #0078d4;
+}
+
+/* Limitar tamaño de imágenes */
+.prose img {
+    @apply mx-auto rounded-xl shadow-2xl my-10;
+    max-width: 600px; /* O el ancho que prefieras */
+    width: 100%;
+    height: auto;
+}
+
+.prose p:has(img) {
+    @apply text-center;
+}

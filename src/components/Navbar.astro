@@ -1,0 +1,153 @@
+---
+import { Image } from "astro:assets";
+import logoImg from "../assets/logo.svg";
+---
+
+<nav
+    class="bg-bluedark fixed top-0 left-0 right-0 text-white px-8 py-4 z-50 border-[#eaeaea15] border-b-1"
+>
+    <div class="flex justify-between items-center max-w-[95%] mx-auto">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <Image src={logoImg} alt="Logo" class="h-12 w-auto" />
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex items-center gap-5">
+            <li>
+                <a href="/" class="hover:text-blue transition-colors">Inicio</a>
+            </li>
+            <li>
+                <a
+                    href="/publications"
+                    class="hover:text-blue transition-colors">Publicaciones</a
+                >
+            </li>
+            <li>
+                <a
+                    href="/investigation"
+                    class="hover:text-blue transition-colors">Investigacion</a
+                >
+            </li>
+            <li>
+                <a href="/news" class="hover:text-blue transition-colors"
+                    >Noticias</a
+                >
+            </li>
+            <li>
+                <a href="/members" class="hover:text-blue transition-colors"
+                    >Miembros</a
+                >
+            </li>
+            <li>
+                <a href="/about" class="hover:text-blue transition-colors"
+                    >Acerca</a
+                >
+            </li>
+            <li>
+                <a
+                    href="#"
+                    class="font-semibold text-white hover:text-black bg-blue hover:bg-white px-4 py-2 rounded-lg transition-colors"
+                >
+                    Unete
+                </a>
+            </li>
+        </ul>
+
+        <!-- Mobile Menu Button and Unete -->
+        <div class="flex items-center gap-4 md:hidden">
+            <button
+                id="menu-toggle"
+                class="text-white focus:outline-none"
+                aria-label="Toggle menu"
+            >
+                <svg
+                    id="hamburger-icon"
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg
+                    id="close-icon"
+                    class="w-6 h-6 hidden"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <a
+                href="#"
+                class="font-semibold text-white hover:text-black bg-blue hover:bg-white px-4 py-2 rounded-lg transition-colors"
+            >
+                Unete
+            </a>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4">
+        <ul class="flex flex-col gap-4">
+            <li>
+                <a href="/" class="block hover:text-blue transition-colors"
+                    >Inicio</a
+                >
+            </li>
+            <li>
+                <a
+                    href="/publications"
+                    class="block hover:text-blue transition-colors"
+                    >Publicaciones</a
+                >
+            </li>
+            <li>
+                <a
+                    href="/investigation"
+                    class="block hover:text-blue transition-colors"
+                    >Investigacion</a
+                >
+            </li>
+            <li>
+                <a href="/news" class="block hover:text-blue transition-colors"
+                    >Noticias</a
+                >
+            </li>
+            <li>
+                <a
+                    href="/members"
+                    class="block hover:text-blue transition-colors">Miembros</a
+                >
+            </li>
+            <li>
+                <a href="/about" class="block hover:text-blue transition-colors"
+                    >Acerca</a
+                >
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const hamburgerIcon = document.getElementById("hamburger-icon");
+    const closeIcon = document.getElementById("close-icon");
+
+    menuToggle?.addEventListener("click", () => {
+        mobileMenu?.classList.toggle("hidden");
+        hamburgerIcon?.classList.toggle("hidden");
+        closeIcon?.classList.toggle("hidden");
+    });
+</script>

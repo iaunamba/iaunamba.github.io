@@ -1,0 +1,66 @@
+---
+import AuthorName from "../../components/AuthorName.astro";
+import LayoutBase from "../../layouts/LayoutBase.astro";
+import { getCollection } from "astro:content";
+import { Image } from 'astro:assets';
+const posts = await getCollection("investigation");
+---
+
+<LayoutBase
+    MetaTitle="Nuestras Investigaciones - IA Unamba"
+    title="Investigacion"
+    description="Transformamos investigación en soluciones reales mediante inteligencia artificial."
+>
+    <main class="max-w-7xl mx-auto p-4 sm:p-6">
+        <section class="grid gap-3 sm:gap-4">
+            {
+                posts.map((post) => {
+                    const { slug, data } = post;
+                    const {
+                        title,
+                        description,
+                        date_publication,
+                        cover_image,
+                        tags,
+                        author,
+                        readingtime,
+                        url_doi_org,
+                    } = data;
+
+                    return (
+                        <article class="block bg-[#181A1E] rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 py-4 sm:py-6 md:py-8 px-4 sm:px-6 md:px-10 text-white">
+                            <div class="grid grid-cols-1 md:grid-cols-[30%_70%] gap-4">
+                                <div class="flex flex-col gap-3 sm:gap-4">
+                                    <Image
+                                              src={cover_image}
+                                              alt={title}
+                                              width={800}
+                                              height={400}
+                                              class="w-full h-40 sm:h-48 object-cover rounded-lg mb-2 sm:mb-4"
+                                    />
+                                    <div class="flex flex-wrap gap-1 text-sm sm:text-base">
+                                        {author.map((id) => (
+                                            <AuthorName authorId={id} /><span>,</span>
+                                        ))}
+                                        <span> {date_publication}</span>
+                                    </div>
+                                </div>
+                                <div class="md:pl-8">
+                                    <h3
+                                        transition:name={`investigation-${slug}`}
+                                        class="text-lg sm:text-xl font-semibold mb-2"
+                                    >
+                                        {title}
+                                    </h3>
+                                    <p class="text-base sm:text-lg md:text-xl text-[#B2BBC5] font-medium">
+                                        {description}
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    );
+                })
+            }
+        </section>
+    </main>
+</LayoutBase>

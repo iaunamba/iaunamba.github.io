@@ -1,0 +1,212 @@
+---
+// src/components/Carousel.astro
+interface Props {
+  images: string[];
+  height?: string;
+  autoplay?: boolean;
+  interval?: number;
+}
+
+const {
+  images,
+  height = "h-150",
+  autoplay = false,
+  interval = 3000
+} = Astro.props;
+
+const carouselId = `carousel-${Math.random().toString(36).substr(2, 9)}`;
+---
+
+<div class="relative w-full max-w-full  mx-auto overflow-hidden rounded-lg">
+  <!-- Contenedor del carrusel -->
+  <div
+    id={carouselId}
+    class={`carousel-container flex transition-transform duration-500 ${height}`}
+    data-autoplay={autoplay}
+    data-interval={interval}
+    data-total={images.length}
+  >
+    {images.map((image, index) => (
+      <div class="min-w-full shrink-0">
+        <img
+          src={image}
+          alt={`Slide ${index + 1}`}
+          class="w-full h-full object-cover"
+        />
+      </div>
+    ))}
+  </div>
+
+  <!-- Botón anterior -->
+  {images.length > 1 && (
+    <>
+      <!-- Botón anterior -->
+      <button
+        class="carousel-prev absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 sm:p-3 rounded-full transition z-10"
+        data-carousel={carouselId}
+        aria-label="Imagen anterior"
+      >
+        <svg class="w-4 h-4 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      <!-- Botón siguiente -->
+      <button
+        class="carousel-next absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 sm:p-3 rounded-full transition z-10"
+        data-carousel={carouselId}
+        aria-label="Imagen siguiente"
+      >
+        <svg class="w-4 h-4 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+
+      <!-- Indicadores (dots) -->
+      <div class="absolute bottom-2 sm:bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5 sm:gap-2 z-10">
+        {images.map((_, index) => (
+          <button
+            class="carousel-dot w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-white/50 hover:bg-white transition"
+            data-carousel={carouselId}
+            data-index={index}
+            aria-label={`Ir a imagen ${index + 1}`}
+          ></button>
+        ))}
+      </div>
+    </>
+  )}
+</div>
+
+<style>
+  .carousel-dot.active {
+    background-color: white;
+    transform: scale(1.2);
+  }
+</style>
+
+<script>
+  function initCarousels() {
+    const carousels = document.querySelectorAll('.carousel-container');
+
+    carousels.forEach((carousel) => {
+      const container = carousel as HTMLElement;
+      const carouselId = container.id;
+      const parent = container.parentElement!;
+
+      const prevBtn = parent.querySelector(`.carousel-prev[data-carousel="${carouselId}"]`) as HTMLButtonElement;
+      const nextBtn = parent.querySelector(`.carousel-next[data-carousel="${carouselId}"]`) as HTMLButtonElement;
+      const dots = parent.querySelectorAll(`.carousel-dot[data-carousel="${carouselId}"]`);
+
+      const totalSlides = parseInt(container.dataset.total || '0');
+      let currentSlide = 0;
+      let autoplayInterval: ReturnType<typeof setInterval> | undefined;
+
+      if (totalSlides <= 1) return; // No hacer nada si solo hay una imagen
+
+      // Función para ir a un slide específico
+      function goToSlide(index: number) {
+        currentSlide = index;
+        const offset = -100 * currentSlide;
+        container.style.transform = `translateX(${offset}%)`;
+
+        // Actualizar dots
+        dots.forEach((dot, i) => {
+          if (i === currentSlide) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+      }
+
+      // Botón anterior
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+          currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+          goToSlide(currentSlide);
+        });
+      }
+
+      // Botón siguiente
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          currentSlide = (currentSlide + 1) % totalSlides;
+          goToSlide(currentSlide);
+        });
+      }
+
+      // Dots
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          goToSlide(index);
+        });
+      });
+
+      // Autoplay
+      const autoplay = container.dataset.autoplay === 'true';
+      const interval = parseInt(container.dataset.interval || '3000');
+
+      function startAutoplay() {
+        if (autoplay) {
+          autoplayInterval = setInterval(() => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            goToSlide(currentSlide);
+          }, interval);
+        }
+      }
+
+      function stopAutoplay() {
+        if (autoplayInterval) {
+          clearInterval(autoplayInterval);
+        }
+      }
+
+      if (autoplay) {
+        startAutoplay();
+
+        // Pausar autoplay al hover
+        parent.addEventListener('mouseenter', stopAutoplay);
+        parent.addEventListener('mouseleave', startAutoplay);
+      }
+
+      // Soporte para touch/swipe en móviles
+      let touchStartX = 0;
+      let touchEndX = 0;
+
+      container.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+
+      container.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+      }, { passive: true });
+
+      function handleSwipe() {
+        if (touchEndX < touchStartX - 50) {
+          // Swipe izquierda - siguiente
+          currentSlide = (currentSlide + 1) % totalSlides;
+          goToSlide(currentSlide);
+        }
+        if (touchEndX > touchStartX + 50) {
+          // Swipe derecha - anterior
+          currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+          goToSlide(currentSlide);
+        }
+      }
+
+      // Inicializar en el primer slide
+      goToSlide(0);
+    });
+  }
+
+  // Inicializar cuando el DOM esté listo
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCarousels);
+  } else {
+    initCarousels();
+  }
+
+  // Reinicializar después de navegación (Astro View Transitions)
+  document.addEventListener('astro:page-load', initCarousels);
+</script>
