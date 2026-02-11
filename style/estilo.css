@@ -1,0 +1,352 @@
+/* ============================= */
+/* RESET GENERAL */
+/* ============================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+	background-color: #0d1117;/*#0e0e0e;*/
+    color: #f3f3f3;
+    line-height: 1.6;
+}
+
+/* ============================= */
+/* HEADER + MENU ESTILO IMFD */
+/* ============================= */
+
+.main-header {
+    width: 100%;
+    background-color: #0d1117; /*#1e1e1e;*/
+    border-bottom: 1px solid #2a2a2a;
+}
+
+/* Logo centrado */
+.logo-container {
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+
+.logo-container img {
+    height: 90px;
+    margin-bottom: 0px;
+}
+
+.logo-container h1 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #cccccc;
+    letter-spacing: 1px;
+}
+
+/* Navegaci�n */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: #c3d0e5;
+    font-weight: 500;
+    padding-bottom: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+.main-nav ul li a:hover {
+    color: #0078D4;
+}
+
+/* Activo */
+.main-nav ul li a.active {
+    color: #0078D4;
+}
+
+.main-nav ul li a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #0078D4;
+}
+
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+
+.hero {
+    padding: 120px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #0d1117, #0d1117);
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    color: #c3d0e5; /*#0078D4;*/
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #cccccc;
+}
+
+.hero p {
+    max-width: 850px;
+    margin: auto;
+    color: #9fb1d1;
+    font-size: 1.05rem;
+}
+
+/* ============================= */
+/* SECCIONES GENERALES */
+/* ============================= */
+
+.section {
+    padding: 50px 60px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    margin-bottom: 60px;
+    color: #c3d0e5; /*#0078D4;*/
+}
+
+/* ============================= */
+/* CARDS DISCIPLINAS */
+/* ============================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+}
+
+.card {
+    background-color: #161a20;
+    padding: 35px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #2a2a2a;
+}
+
+.card h3 {
+    color: #c3d0e5;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #9fb1d1;
+    font-size: 0.95rem;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 18px rgba(0, 120, 212, 0.4);
+}
+
+/* ============================= */
+/* ICONOS LINEAS DE INVESTIGACION */
+/* ============================= */
+
+.card .icon {
+    font-size: 40px;
+    color: #0078D4;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.card:hover .icon {
+    transform: scale(1.2);
+    color: #00A2FF;
+}
+
+/* ============================= */
+/* NOTICIAS */
+/* ============================= */
+/*
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+.news-card {
+    background-color: #161a20;
+    padding: 30px;
+    border-left: 4px solid #0078D4;
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    border: 1px solid #2a2a2a;
+}
+
+.news-card h3 {
+    color: #c3d0e5;
+    margin-bottom: 10px;
+}
+
+.news-card p {
+    color: #9fb1d1;
+    font-size: 0.95rem;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+*/
+/* ============================= */
+/* NOTICIAS - DISEÑO TIPO FIGURA 1 */
+/* ============================= */
+
+.noticias-section {
+    
+    padding: 100px 60px;
+    background-color: #0d1117;
+}
+
+.noticias-grid {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+/* Tarjeta blanca sobre fondo oscuro */
+.noticia-card {
+    background-color: #161a20;
+    border-radius: 6px;    
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    border: 1px solid #2a2a2a;
+}
+
+.noticia-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Imagen */
+.noticia-img {
+    position: relative;
+}
+
+.noticia-img img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Etiquetas */
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #0078D4;
+    color: white;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.badge.secondary {
+    right: 120px;
+    background-color: #005A9E;
+}
+
+/* Contenido */
+.noticia-content {
+    padding: 25px;
+}
+
+.noticia-content h3 {
+    color: #c3d0e5;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.noticia-content p {
+    color: #9fb1d1;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+/* Leer más */
+.leer-mas {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: #0078D4;
+    letter-spacing: 1px;
+}
+
+.leer-mas:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .noticias-section {
+        padding: 60px 20px;
+    }
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer {
+    background-color: #0d1117
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+    font-size: 0.9rem;
+    color: #888;
+    border-top: 1px solid #2a2a2a;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .section {
+        padding: 60px 20px;
+    }
+
+}
