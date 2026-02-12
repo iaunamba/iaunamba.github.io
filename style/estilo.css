@@ -35,8 +35,9 @@ body {
 }
 
 .logo-container img {
-    height: 90px;
-    margin-bottom: 0px;
+    height: 70px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .logo-container h1 {
@@ -117,7 +118,7 @@ body {
     max-width: 850px;
     margin: auto;
     color: #9fb1d1;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
 }
 
 /* ============================= */
@@ -160,7 +161,7 @@ body {
 
 .card p {
     color: #9fb1d1;
-    font-size: 0.95rem;
+    font-size: 1.05rem;
 }
 
 .card:hover {
@@ -349,4 +350,164 @@ footer {
         padding: 60px 20px;
     }
 
+}
+
+/*RESPONSIVE*/
+/* ================================= */
+/* RESPONSIVE DESIGN PROFESIONAL */
+/* ================================= */
+
+/* ----------- Tablets grandes ----------- */
+@media (max-width: 1200px) {
+
+    .section {
+        padding: 60px 40px;
+    }
+
+    .hero {
+        padding: 100px 30px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .noticias-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+/* ----------- Tablets ----------- */
+@media (max-width: 992px) {
+
+    .main-nav ul {
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.3rem;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    .noticias-section {
+        padding: 70px 30px;
+    }
+}
+
+/* ----------- Móviles grandes ----------- */
+@media (max-width: 768px) {
+
+    .logo-container img {
+        height: 70px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section {
+        padding: 60px 20px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .noticias-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .noticia-img img {
+        height: 200px;
+    }
+}
+
+/* ----------- Móviles pequeños ----------- */
+@media (max-width: 576px) {
+
+    .logo-container img {
+        height: 60px;
+    }
+
+    .main-nav ul li a {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card .icon {
+        font-size: 32px;
+    }
+
+    .noticia-content h3 {
+        font-size: 1rem;
+    }
+
+    .noticia-content p {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 20px;
+    }
+}
+
+/* ----------- Pantallas muy grandes ----------- */
+@media (min-width: 1400px) {
+
+    .section {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .hero {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .noticias-section {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
 }
