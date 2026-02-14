@@ -431,12 +431,110 @@ body {
 }
 
 
+
+
 /* Responsive */
 @media (max-width: 768px) {
     .noticias-section {
         padding: 60px 20px;
     }
 }
+
+
+
+/* ============================= */
+/* PUBLICACIONES ESTILO ACADEMICO */
+/* ============================= */
+/* CONTENEDOR GENERAL (igual que inicio) */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.publicaciones-section {
+    padding: 90px 20px;
+    background-color: #0d1117;
+}
+
+.year-block {
+    margin-bottom: 50px;
+}
+
+.year-title {
+    color: #0078D4;
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #1f2937;
+    padding-bottom: 8px;
+}
+
+/* Cada publicación */
+.publication-item {
+    margin-bottom: 22px;
+}
+
+/* Título */
+.pub-title {
+    color: #c3d0e5;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+/* Autores */
+.pub-authors {
+    color: #9fb1d1;
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+}
+
+/* Venue */
+.pub-venue {
+    color: #0078D4;
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+}
+
+/* Enlaces */
+.pub-links a {
+    color: #00A2FF;
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-right: 10px;
+}
+
+.pub-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+    .publicaciones-section {
+        padding: 60px 20px;
+    }
+
+    .pub-title {
+        font-size: 0.95rem;
+    }
+
+    .pub-authors,
+    .pub-venue,
+    .pub-links a {
+        font-size: 0.8rem;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .publicaciones-section {
+        padding: 60px 15px;
+    }
+
+}
+
 
 
 /* ============================= */
