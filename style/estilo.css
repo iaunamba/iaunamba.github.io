@@ -431,20 +431,10 @@ body {
 }
 
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 1466fe026198179277f151b61f5b5371687af2bc
-/* Responsive */
-@media (max-width: 768px) {
-    .noticias-section {
-        padding: 60px 20px;
-    }
-}
 
 
-<<<<<<< HEAD
 
 /* ============================= */
 /* PUBLICACIONES ESTILO ACADEMICO */
@@ -511,6 +501,15 @@ body {
 .pub-links a:hover {
     text-decoration: underline;
 }
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .noticias-section {
+        padding: 60px 20px;
+    }
+}
+
 
 @media (max-width: 768px) {
 
