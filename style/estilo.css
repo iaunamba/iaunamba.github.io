@@ -431,20 +431,7 @@ body {
 }
 
 
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 1466fe026198179277f151b61f5b5371687af2bc
-/* Responsive */
-@media (max-width: 768px) {
-    .noticias-section {
-        padding: 60px 20px;
-    }
-}
-
-
-<<<<<<< HEAD
 
 /* ============================= */
 /* PUBLICACIONES ESTILO ACADEMICO */
@@ -512,6 +499,31 @@ body {
     text-decoration: underline;
 }
 
+
+
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer {
+    background-color: #0d1117
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+    font-size: 0.9rem;
+    color: #888;
+    border-top: 1px solid #2a2a2a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .noticias-section {
+        padding: 60px 20px;
+    }
+}
+
+
 @media (max-width: 768px) {
 
     .publicaciones-section {
@@ -537,24 +549,6 @@ body {
         padding: 60px 15px;
     }
 
-}
-
-
-
-=======
->>>>>>> 1466fe026198179277f151b61f5b5371687af2bc
-/* ============================= */
-/* FOOTER */
-/* ============================= */
-
-footer {
-    background-color: #0d1117
-    text-align: center;
-    padding: 25px;
-    margin-top: 60px;
-    font-size: 0.9rem;
-    color: #888;
-    border-top: 1px solid #2a2a2a;
 }
 
 
